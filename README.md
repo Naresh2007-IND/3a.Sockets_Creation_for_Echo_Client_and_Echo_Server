@@ -9,10 +9,11 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-```
+
 Developed by : Naresh J
 Register Number : 212225230195
 ## CLIENT:
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -20,7 +21,9 @@ while True:
  msg=input("Client > ")
  s.send(msg.encode())
  print("Server > ",s.recv(1024).decode())
+```
 ## SERVER:
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
